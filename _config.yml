@@ -9,26 +9,26 @@
 title                    : "Xueyun Tian(田雪昀)"
 description              : "Ph.D Candidate"
 repository               : "Eureka-Maggie/Eureka-Maggie.github.io"
-google_scholar_stats_use_cdn : use
+# google_scholar_stats_use_cdn : use
 
 # google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+# google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
-google_site_verification :  M5vuU0dih00ulCJ02KZzIxZO2qRkQ1kdU13ihJp_wS4 # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  codeva-MR3Gyqp5eZ # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+# google_site_verification :  M5vuU0dih00ulCJ02KZzIxZO2qRkQ1kdU13ihJp_wS4 # get google_site_verification from https://search.google.com/search-console/about
+# bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
+# baidu_site_verification  :  codeva-MR3Gyqp5eZ # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
 # Site Author
 author:
-  name             : "Hao Tian（田昊）"
-  avatar           : "images/me.jpg"
-  bio              : "State Key Laboratory of Novel Software Technology, Nanjing University"
-  location         : "Nanjing, China"
+  name             : "Xueyun Tian"
+  avatar           : "images/favicon.jpg"
+  bio              : "改名了不知道英文, ICT, CAS"
+  location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=PYFMSbYAAAAJ"
-  email            : "withhaotian@gmail.com"
+  googlescholar    : "https://scholar.google.com/citations?user=6Ymi63oAAAAJ"
+  email            : "tianxueyun23z@ict.ac.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :  # 
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "withhaotian"
+  github           : "Eureka-Maggie"
   google_plus      :
   keybase          :
   instagram        :
@@ -57,7 +57,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  bilibili         : #"https://space.bilibili.com/23073763"
+  bilibili         : "https://space.bilibili.com/91427080"
 
 
 # Reading Files
