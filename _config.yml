@@ -9,7 +9,7 @@
 title                    : "Xueyun Tian(田雪昀)"
 description              : "Ph.D Candidate"
 repository               : "Eureka-Maggie/Eureka-Maggie.github.io"
-google_scholar_stats_use_cdn : false
+google_scholar_stats_use_cdn : use
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
