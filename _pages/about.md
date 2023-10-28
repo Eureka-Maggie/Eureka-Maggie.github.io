@@ -41,16 +41,17 @@ My research interest includes Large Languege Models(LLMs), In-Context Learning(I
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**%}
 
 # 🎖 Honors and Awards
-- *暂无
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.04* Outstanding award in MCM/ICM (top 0.5%)
+- *2020.10* First prize in Beijing region of CUMCM
+- *2019-2023* Outstanding Graduates, Outstanding Student Cadre, Merit Student, Outstanding Student Scholarship of China Agricultural University
 
 # 📖 Educations
-- *2023.09 - (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 💬 Invited Talks
+- *2023.09 - (now)*, xxx实验室, Institute of Computing Technology, Chinese Academy of Sciences(CAS).
+- *2015.09 - 2019.06*, Science Experimental Class, College of Information and Electrical Engineering, China Agricultural University (CAU).
+  
+{%# 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)%}
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
