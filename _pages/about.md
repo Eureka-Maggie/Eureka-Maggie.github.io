@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/).Prior to that, thanks to the guidance of [Prof. Li Xiang](http://faculty.cau.edu.cn/xxdqxy/lx_7543/list.htm), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
+Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/). Prior to that, thanks to the guidance of [Prof. Li Xiang](http://faculty.cau.edu.cn/xxdqxy/lx_7543/list.htm), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
 
 My research interest includes Large Languege Models(LLMs), In-Context Learning(ICL) and Knowledge Editing in NLP. 
 
@@ -26,12 +26,12 @@ My research interest includes Large Languege Models(LLMs), In-Context Learning(I
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Sensors</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Sensors</div><img src='images/Journal of Sensors.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Optimization Method for the Layout of Soil Humidity Sensors Based on Compressed Sensing](https://www.hindawi.com/journals/js/2021/9901990/)
 
-{%**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+{% **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
