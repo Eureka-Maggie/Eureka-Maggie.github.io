@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/). Prior to that, thanks to the guidance of [Prof. Li Xiang](http://faculty.cau.edu.cn/xxdqxy/lx_7543/list.htm), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
+Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/). Prior to that, thanks to the guidance of [Prof. Xiang Li](http://faculty.cau.edu.cn/xxdqxy/lx_7543/list.htm), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
 
 My research interest includes Large Languege Models(LLMs), In-Context Learning(ICL) and Knowledge Editing in NLP. 
 
@@ -53,5 +53,6 @@ My research interest includes Large Languege Models(LLMs), In-Context Learning(I
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)%}
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 💻 EXPERIENCES
+- *2022.01 - 2022.04* Intern of "Ubiquitous Computing based on Wi-Fi Signal" in Peking University, under the guidance of [Prof. Daqing Zhang](https://dl.ccf.org.cn/albumList/5260699196213248?_ack=1) and Dr. Yang Li.
+- *2019.12 - 2021.03* Team leader of "Ubiquitous Computing for VR Motion Sickness" in Undergraduate Research Program in CAU.
