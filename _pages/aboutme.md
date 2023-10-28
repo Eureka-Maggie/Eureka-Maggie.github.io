@@ -20,7 +20,7 @@ redirect_from:
 
 {% include_relative includes/educations.md %}
 
-{% include_relative includes/experieces.md %}
+{% include_relative includes/experiences.md %}
 
 <br />
 
