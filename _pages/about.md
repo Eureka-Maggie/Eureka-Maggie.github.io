@@ -17,13 +17,12 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/).
+Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/).Prior to that, thanks to the guidance of [Prof. Li Xiang](http://faculty.cau.edu.cn/xxdqxy/lx_7543/list.htm), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
 
 My research interest includes Large Languege Models(LLMs), In-Context Learning(ICL) and Knowledge Editing in NLP. 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.10*: &nbsp;🎉🎉 暂无
 
 # 📝 Publications 
 
@@ -42,11 +41,11 @@ My research interest includes Large Languege Models(LLMs), In-Context Learning(I
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *暂无
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.09 - (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 💬 Invited Talks
