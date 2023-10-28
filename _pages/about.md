@@ -26,19 +26,12 @@ My research interest includes Large Languege Models(LLMs), In-Context Learning(I
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Sensors</div><img src='images/Journal of Sensors.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Sensors</div><img src='images/Journal of Sensors.png' alt="sym" width="100%"></div></div><div class='paper-box-text' markdown="1">
 
-[An Optimization Method for the Layout of Soil Humidity Sensors Based on Compressed Sensing](https://www.hindawi.com/journals/js/2021/9901990/)
+[An Optimization Method for the Layout of Soil Humidity Sensors Based on Compressed Sensing](https://www.hindawi.com/journals/js/2021/9901990/) Journal of Sensors 2021 (2021): 1-10.\\Yunsong Jia, <u><b>Xueyun Tian</b></u>, Xin Chen, and Xiang Li
 
-<!-- **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
 </div>
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**-->
-
 # 🎖 Honors and Awards
 - *2021.04* Outstanding award in MCM/ICM (top 0.5%)
 - *2020.10* First prize in Beijing region of CUMCM
