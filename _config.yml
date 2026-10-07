@@ -6,8 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xueyun Tian(田雪昀)"
-description              : "Ph.D Candidate"
+title                    : "Xueyun Tian (田雪昀)"
+description              : "Ph.D. Student"
+url                      : "https://eureka-maggie.github.io"
+baseurl                  : ""
 repository               : "Eureka-Maggie/Eureka-Maggie.github.io"
 # google_scholar_stats_use_cdn : use
 
@@ -22,13 +24,13 @@ repository               : "Eureka-Maggie/Eureka-Maggie.github.io"
 # Site Author
 author:
   name             : "Xueyun Tian"
-  avatar           : "images/Maggie_me.jpg"
-  bio              : "CAS Key Laboratory of AI Security, ICT, CAS"
+  avatar           : "images/xueyun-tian-sunset.jpg"
+  bio              : "Institute of Computing Technology, Chinese Academy of Sciences"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=6Ymi63oAAAAJ"
-  email            : "tianxy.cs@gmail.com"
+  email            : "tianxueyun23z@ict.ac.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :  # 
   bitbucket        :

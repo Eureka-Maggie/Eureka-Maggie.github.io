@@ -1,0 +1,30 @@
+<article class="publication{% unless include.paper.group == 'selected' %} publication--text-only{% endunless %}" id="paper-{{ include.paper.id }}">
+  {% if include.paper.group == 'selected' %}
+  <div class="publication__visual">
+    {% if include.paper.image %}
+    <a class="publication__image-link" href="{{ include.paper.image | relative_url }}" aria-label="View full-size figure for {{ include.paper.title | escape }}">
+      <img src="{{ include.paper.image | relative_url }}" alt="{{ include.paper.image_alt | escape }}" loading="lazy" decoding="async">
+    </a>
+    {% else %}
+    <div class="publication__placeholder" role="img" aria-label="Figure placeholder for {{ include.paper.title | escape }}">
+      <span class="publication__placeholder-label">{{ include.paper.short_title | escape }}</span>
+      <span>Figure coming soon</span>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="publication__body">
+    <div class="publication__venue{% if include.paper.venue contains 'Under review' %} publication__venue--pending{% endif %}">{{ include.paper.venue | escape }}</div>
+    <h4 class="publication__title">{% if include.paper.paper %}<a href="{{ include.paper.paper }}">{{ include.paper.title | escape }}</a>{% else %}{{ include.paper.title | escape }}{% endif %}</h4>
+    <p class="publication__authors">{{ include.paper.authors | escape | replace: 'Xueyun Tian', '<strong>Xueyun Tian</strong>' | replace: 'Tian Xueyun', '<strong>Tian Xueyun</strong>' }}</p>
+    {% if include.paper.author_note %}<p class="publication__author-note">{{ include.paper.author_note | escape }}</p>{% endif %}
+    {% if include.paper.summary %}<p class="publication__summary">{{ include.paper.summary | escape }}</p>{% endif %}
+    {% if include.paper.paper or include.paper.code or include.paper.project %}
+    <div class="publication__links">
+      {% if include.paper.paper %}<a href="{{ include.paper.paper }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if include.paper.code %}<a href="{{ include.paper.code }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if include.paper.project %}<a href="{{ include.paper.project }}">Project <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</article>

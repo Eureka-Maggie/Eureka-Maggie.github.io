@@ -1,0 +1,213 @@
+/* Resume and publication presentation. */
+/* Center the face in the supplied portrait within the circular avatar. */
+.author__avatar {
+  position: relative;
+  display: block;
+  flex: 0 0 75px;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    position: absolute;
+    left: -27%;
+    top: -68%;
+    width: 165%;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  @media (min-width: 925px) {
+    width: 175px;
+    height: 175px;
+    flex-basis: 175px;
+  }
+}
+
+.page__content {
+  #about-me {
+    margin-top: 0;
+    scroll-margin-top: 5rem;
+
+    &:before { content: none; }
+  }
+
+  h2 {
+    margin-top: 2.2rem;
+    padding-bottom: .55rem;
+    border-bottom: 1px solid #e5e9ef;
+    font-size: 1.5rem;
+    scroll-margin-top: 5rem;
+  }
+
+  h3 { margin-top: 1.5rem; }
+
+  .research-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1.2rem 0 1.5rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: .3rem .7rem;
+      border-radius: 4px;
+      background: #f0f4f9;
+      color: #284a73;
+      font-size: .84rem;
+    }
+  }
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: minmax(180px, 29%) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #edf0f4;
+
+  &--text-only {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 1rem 0;
+  }
+
+  &__visual { min-width: 0; }
+
+  &__image-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    padding: .65rem;
+    border: 1px solid #e5e9ef;
+    border-radius: 6px;
+    background: #fff;
+
+    img {
+      display: block;
+      width: 100%;
+      max-height: 205px;
+      object-fit: contain;
+    }
+  }
+
+  &__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    min-height: 150px;
+    padding: 1rem;
+    border: 1px dashed #c6cfdb;
+    border-radius: 6px;
+    background: #f7f9fc;
+    color: #65758b;
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  &__placeholder-label {
+    color: #344d70;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  &__venue {
+    margin-bottom: .45rem;
+    color: #22518a;
+    font-size: .79rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  &__venue--pending { color: #776444; }
+}
+
+.page__content .publication {
+  &__title {
+    margin: 0 0 .45rem;
+    font-size: 1.05rem;
+    line-height: 1.45;
+
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  }
+
+  &__authors {
+    margin: 0 0 .4rem;
+    color: #58616c;
+    font-size: .85rem;
+    line-height: 1.6;
+
+    strong { color: #303b48; }
+  }
+
+  &__author-note {
+    margin: -.15rem 0 .4rem;
+    color: #65758b;
+    font-size: .75rem;
+  }
+
+  &__summary {
+    margin: 0 0 .6rem;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+
+    a {
+      padding: .15rem .55rem;
+      border: 1px solid #d8e1ed;
+      border-radius: 4px;
+      font-size: .78rem;
+      text-decoration: none;
+
+      &:hover { background: #f0f4f9; }
+    }
+  }
+}
+
+.earlier-publications, .earlier-experience {
+  margin: 1.5rem 0;
+
+  summary {
+    color: #22518a;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.author__urls_sm a { overflow-wrap: anywhere; }
+a:focus-visible, summary:focus-visible, button:focus-visible {
+  outline: 2px solid #22518a;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .publication {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+
+    &__visual { max-width: 100%; }
+    &__image-link { min-height: 120px; }
+    &__image-link img { max-height: 190px; }
+    &__placeholder { min-height: 120px; }
+  }
+
+  .profile_box { flex-wrap: wrap; }
+  .author__urls-wrapper { max-width: 100%; }
+}

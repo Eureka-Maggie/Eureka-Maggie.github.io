@@ -1,0 +1,135 @@
+# Publication metadata. Selected papers show figures; collaborative papers use text-only entries.
+- id: glow
+  group: selected
+  title: 'Learning from Mistakes: Negative Reasoning Samples Enhance Out-of-Domain Generalization'
+  authors: Xueyun Tian*, Minghua Ma*, Bingbing Xu, Nuoyan Lyu, Wei Li, Heng Dong, Zheng Chu, Yuanzhuo Wang, Huawei
+    Shen
+  venue: ACL 2026 · Main
+  summary: Negative reasoning samples improve out-of-domain generalization; GLOW adaptively reweights training examples
+    using their learning dynamics.
+  paper: https://arxiv.org/abs/2601.04992
+  image: /images/papers/glow.png
+  image_alt: 'Figure 1: in-domain and out-of-domain reasoning performance, with positive-only and negative-only
+    training loss dynamics.'
+  author_note: '* Equal contribution.'
+  code: https://github.com/Eureka-Maggie/GLOW
+- id: roma
+  group: selected
+  title: 'ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding'
+  authors: Xueyun Tian, Wei Li, Bingbing Xu, Heng Dong, Yuanzhuo Wang, Huawei Shen
+  venue: ACL 2026 · Findings
+  summary: A real-time omni-multimodal assistant that supports proactive alerts, live narration, and reactive question
+    answering over audio-video streams.
+  paper: https://arxiv.org/abs/2601.10323
+  image: /images/papers/roma.png
+  image_alt: ROMA model architecture with synchronized audio-video units and a separate speak head.
+  project: https://eureka-maggie.github.io/ROMA_show
+- id: mige
+  group: selected
+  title: 'MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing'
+  authors: Xueyun Tian, Wei Li, Bingbing Xu, Yige Yuan, Yuanzhuo Wang, Huawei Shen
+  venue: ACM Multimedia 2025
+  summary: A unified framework for subject-driven generation and instruction-based image editing, with transfer
+    to compositional editing tasks.
+  paper: https://arxiv.org/abs/2502.21291
+  image: /images/papers/mige.png
+  image_alt: MIGE examples of subject-driven generation, instruction-based editing, and subject-driven editing.
+  code: https://github.com/Eureka-Maggie/MIGE
+- id: syncpro
+  group: selected
+  short_title: SyncPro
+  title: 'SyncPro: Synchronous Reasoning and Responding for Proactive Streaming Video Understanding'
+  authors: Xueyun Tian · First-author work
+  venue: Under review at ICLR 2027
+  summary: Proactive streaming video understanding with synchronized thinking and response streams, trained with
+    supervised fine-tuning and reinforcement learning.
+  image: /images/papers/syncpro.png
+  image_alt: SyncPro architecture with synchronized Inner and Response branches and shared streaming history.
+- id: rare
+  group: selected
+  short_title: RARE
+  title: 'RARE: Reinforcement Learning with Adaptive Rubric Evolution for Open-Ended Generation'
+  authors: Xueyun Tian · First-author work
+  venue: Under review at ICLR 2027
+  summary: Adaptive rubric evolution for open-ended generation, using current policy feedback to replace saturated
+    criteria while retaining other criteria and scores.
+  image: /images/papers/rare.png
+  image_alt: 'RARE training pipeline illustrated on script generation: data construction, on-policy rollouts, rubric-based scoring, and criterion
+    switching.'
+- id: ava
+  group: other
+  title: 'AVA-Encoder: Towards Agent-Native Video Representation Learning'
+  authors: Chuyue Li, Jinpeng Yu, Haozhe Wang, Tian Xueyun, Zhijing Zhang, Bingnan Li, Shuqi Gu, Kan Ren, Jiaming
+    Liu, Ruihua Huang
+  venue: arXiv 2026 · Under review at AAAI
+  summary: Agent-native video representations that connect film understanding, structured knowledge, and video reconstruction.
+  paper: https://arxiv.org/abs/2608.12313
+  image: /images/papers/ava.png
+  image_alt: AVA-Encoder framework for encoding videos as film knowledge graphs and reconstructing videos.
+- id: diffimagine
+  group: other
+  title: 'DiffImaginE: Imagine to Verify Entity Types with Diffusion'
+  authors: Feng Zhang, Feiyu Han, Rongxin Yang, Yang Liu, Yancheng Chen, Rui Wang, Yingguang Yang, Tian Xueyun,
+    Chongyang Zhang, Hao Zheng, Xu Kefu, Congjing Ran, Fuhai Chen, Bin Chong
+  venue: arXiv 2026 · Under review at AAAI
+  summary: Type-conditioned diffusion for verifying entity types using multimodal evidence.
+  paper: https://arxiv.org/abs/2608.03025
+  image: /images/papers/diffimagine.png
+  image_alt: DiffImaginE pipeline for type-conditioned diffusion and multimodal entity verification.
+- id: com
+  group: other
+  title: 'Chain-of-Memory: Lightweight Memory Construction with Dynamic Evolution for LLM Agents'
+  authors: Xiucheng Xu, Bingbing Xu, Xueyun Tian, Zihe Huang, Rongxin Chen, Yunfan Li, Huawei Shen
+  venue: ACL 2026 · Main · Oral
+  summary: Lightweight memory construction and dynamic memory-chain evolution for long-term reasoning in LLM agents.
+  paper: https://arxiv.org/abs/2601.14287
+  image: /images/papers/com.png
+  image_alt: 'Chain-of-Memory architecture: memory retrieval followed by dynamic memory chain evolution.'
+- id: tdp
+  group: other
+  title: 'Beyond Entangled Planning: Task-Decoupled Planning for Long-Horizon Agents'
+  authors: Yunfan Li, Bingbing Xu, Xueyun Tian, Xiucheng Xu, Huawei Shen
+  venue: arXiv 2026
+  summary: Task-decoupled planning with global supervision for long-horizon agents.
+  paper: https://arxiv.org/abs/2601.07577
+  short_title: TDP
+  image: /images/papers/tdp.png
+  image_alt: 'Figure 2: TDP architecture with a supervisor, planner and executor, and graph self-revision.'
+- id: prm
+  group: other
+  title: Towards Robust Process Reward Modeling via Noise-aware Learning
+  authors: Bin Xie, Bingbing Xu, Xueyun Tian, Yilin Chen, Huawei Shen
+  venue: arXiv 2026
+  summary: Noise-aware learning and reflection-aware label correction for more robust process reward models.
+  paper: https://arxiv.org/abs/2601.12748
+  image: /images/papers/prm.png
+  image_alt: Noise-aware process reward modeling framework and reflection-aware label correction.
+- id: gift
+  group: other
+  title: 'GIFT: Games as Informal Training for Generalizable LLMs'
+  authors: Nuoyan Lyu, Bingbing Xu, Xueyun Tian, Weihao Meng, Yige Yuan, Yang Zhang, Zhiyong Huang, Tat-Seng Chua,
+    Huawei Shen
+  venue: arXiv 2026 · Under review at AAAI
+  summary: Game-based informal learning and coordinated subtask training to improve LLM generalization.
+  paper: https://arxiv.org/abs/2601.05633
+  image: /images/papers/gift.png
+  image_alt: GIFT motivation and coordinated subtask training framework.
+- id: robix
+  group: other
+  title: 'Robix: A Unified Model for Robot Interaction, Reasoning and Planning'
+  authors: Huang Fang, Mengxi Zhang, Heng Dong, Wei Li, Zixuan Wang, Qifeng Zhang, Xueyun Tian, Yucheng Hu, Hang
+    Li
+  venue: Technical Report 2025
+  summary: A unified high-level robot model for language interaction, reasoning, and long-horizon task planning.
+  paper: https://arxiv.org/abs/2509.01106
+  image: /images/papers/robix.jpg
+  image_alt: Robix examples of language interaction, reasoning, and planning in real-world robot tasks.
+  project: https://robix-seed.github.io/robix/
+- id: sensors
+  group: earlier
+  title: An Optimization Method for the Layout of Soil Humidity Sensors Based on Compressed Sensing
+  authors: Yunsong Jia, Xueyun Tian, Xin Chen, Xiang Li
+  venue: Journal of Sensors 2021
+  paper: https://doi.org/10.1155/2021/9901990
+  image: /images/Journal of Sensors.png
+  image_alt: Illustration from the soil humidity sensor layout optimization paper.

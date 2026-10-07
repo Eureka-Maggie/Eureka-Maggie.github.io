@@ -1,4 +1,8 @@
-# 🎖 Honors and Awards
-- *2021.04* Outstanding award in MCM/ICM (top 0.5%)
-- *2020.10* First prize in Beijing region of CUMCM
-- *2019-2023* Outstanding Graduates, Outstanding Student Cadre, Merit Student, Outstanding Student Scholarship of China Agricultural University
+## Honors & Awards
+{: #honors }
+
+- **领航博士生奖**, ICT, CAS · 2025–2026 (1/45)
+- **Outstanding Merit Student (三好学生标兵)**, University of Chinese Academy of Sciences
+- **Outstanding Winner**, Mathematical Contest in Modeling (MCM/ICM) · 2021
+- **First Prize, Beijing Region**, China Undergraduate Mathematical Contest in Modeling · 2020
+- **Outstanding Student Scholarship, Second-Class Academic Excellence Scholarship, and Merit Student**, China Agricultural University

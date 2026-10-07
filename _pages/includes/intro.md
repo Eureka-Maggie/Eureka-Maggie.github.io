@@ -1,3 +1,14 @@
-Hi! I am currently a first year PhD student at the Institute of Computing Technology(ICT), CAS. I will continue to learn and progress under the guidance of Prof. Yuanzhuo Wang and [Prof. Fei Sun](http://ofey.me/). Prior to that, thanks to the guidance of [Prof. Xiang Li](https://baike.baidu.com/item/%E6%9D%8E%E6%83%B3/24148024), I received my undergraduate degree from China Agricultural University majoring in Computer Science and Technology.
+# About Me
 
-My research interest includes Large Languege Models(LLMs), In-Context Learning(ICL) and Knowledge Editing in NLP. 
+I am a Ph.D. student in Computer Science and Technology at the **Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)**, advised by [Prof. Yuanzhuo Wang](https://people.ucas.ac.cn/~0017125), [Prof. Bingbing Xu](https://bingbing-x.github.io/), and [Prof. Huawei Shen](https://klais.ict.ac.cn/yjdw/yjy/202404/t20240407_210246.html). I received my bachelor's degree in Computer Science and Technology from China Agricultural University in 2023.
+
+My research focuses on **multimodal understanding, LLM post-training, multimodal generation, and agents**. I am particularly interested in how models understand continuous audio-visual streams, learn from richer feedback, and interact with people in real time.
+
+I am currently a research intern in the Visual Technology Department, Qwen Business Group at **Alibaba**, where I work with [Jiaming Liu](https://scholar.google.com/citations?user=SmL7oMQAAAAJ&hl=en) on proactive streaming video understanding and reinforcement learning for creative generation. Previously, I worked on robot interaction, reasoning, and planning at **ByteDance Seed-Robotics**.
+
+<ul class="research-topics" aria-label="Research interests">
+  <li>Multimodal Understanding</li>
+  <li>LLM Post-training</li>
+  <li>Multimodal Generation</li>
+  <li>Agents</li>
+</ul>
