@@ -68,34 +68,42 @@
 
 .publication {
   display: grid;
-  grid-template-columns: minmax(180px, 29%) minmax(0, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: minmax(140px, 200px) minmax(0, 1fr);
+  gap: 1.25rem;
   align-items: center;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #edf0f4;
+  margin: 1rem 0;
+  padding: 1.25rem;
+  border: 1px solid #d8e0ea;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(35, 55, 80, .045);
 
   &--text-only {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
-    padding: 1rem 0;
+    padding: 1.1rem 1.25rem;
   }
 
-  &__visual { min-width: 0; }
+  &__visual {
+    min-width: 0;
+    width: 100%;
+    max-width: 200px;
+  }
 
   &__image-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px;
-    padding: .65rem;
-    border: 1px solid #e5e9ef;
-    border-radius: 6px;
-    background: #fff;
+    height: 136px;
+    padding: .4rem;
+    border-radius: 4px;
+    background: #f7f9fc;
 
     img {
       display: block;
       width: 100%;
-      max-height: 205px;
+      height: 100%;
+      max-height: 124px;
       object-fit: contain;
     }
   }
@@ -106,7 +114,7 @@
     align-items: center;
     justify-content: center;
     gap: .45rem;
-    min-height: 150px;
+    min-height: 136px;
     padding: 1rem;
     border: 1px dashed #c6cfdb;
     border-radius: 6px;
@@ -201,10 +209,11 @@ a:focus-visible, summary:focus-visible, button:focus-visible {
   .publication {
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
+    padding: 1rem;
 
-    &__visual { max-width: 100%; }
-    &__image-link { min-height: 120px; }
-    &__image-link img { max-height: 190px; }
+    &__visual { max-width: 200px; }
+    &__image-link { height: 120px; }
+    &__image-link img { max-height: 108px; }
     &__placeholder { min-height: 120px; }
   }
 
