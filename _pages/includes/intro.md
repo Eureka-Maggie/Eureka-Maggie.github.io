@@ -1,6 +1,6 @@
 # About Me
 
-I am a Ph.D. student in Computer Science and Technology at the **Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)**, advised by [Prof. Yuanzhuo Wang](https://people.ucas.ac.cn/~0017125), [Prof. Bingbing Xu](https://bingbing-x.github.io/), and [Prof. Huawei Shen](https://klais.ict.ac.cn/yjdw/yjy/202404/t20240407_210246.html). I received my bachelor's degree in Computer Science and Technology from China Agricultural University in 2023.
+I am a Ph.D. student in Computer Science and Technology at the [State Key Laboratory of AI Safety](https://klais.ict.ac.cn/), **Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)**, advised by [Prof. Yuanzhuo Wang](https://people.ucas.ac.cn/~0017125), [Prof. Bingbing Xu](https://bingbing-x.github.io/), and [Prof. Huawei Shen](https://klais.ict.ac.cn/yjdw/yjy/202404/t20240407_210246.html). I received my bachelor's degree in Computer Science and Technology from China Agricultural University in 2023.
 
 My research focuses on **multimodal understanding, LLM post-training, multimodal generation, and agents**. I am particularly interested in how models understand continuous audio-visual streams, learn from richer feedback, and interact with people in real time.
 
