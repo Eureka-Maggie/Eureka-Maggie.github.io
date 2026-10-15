@@ -108,55 +108,6 @@ if (DATA) {
   select('music');
 }
 
-const benchmarks = {
-  streaming: {
-    caption:'StreamingBench · Proactive Output',
-    columns:['Acc@2s ↑'],
-    note:'Responses are evaluated with a two-second tolerance. A dash indicates a result not reported in Table 1.',
-    rows:[['SyncPro-RL',41.20],['SyncPro-SFT',38.80],['Em-Garde',38.00],['MMDuet2',34.60],['MMDuet',29.44],['ThinkStream',27.20],['VST',19.60],['VideoLLM-online',4.00],['VideoChat3',null],['Interleaved',34.00],['Response-only',22.80]],
-  },
-  ovo: {
-    caption:'OVO-Bench · Forward Active Responding',
-    columns:['CRR F1 ↑','SSR F1 ↑','REC F1 ↑','Average F1 ↑'],
-    note:'F1 uses a two-second tolerance. Average F1 is the task mean; MMDuet2’s reported mean covers its two available tasks. Full precision and recall are in Table 2.',
-    rows:[['SyncPro-RL',26.91,25.67,50.00,34.19],['SyncPro-SFT',28.06,21.36,47.69,32.37],['Em-Garde',26.40,23.40,43.16,30.99],['MMDuet2',14.40,null,26.62,20.51],['StreamForest',2.08,10.11,29.67,13.95],['ThinkStream',5.30,6.80,26.58,12.89],['VST',7.46,3.26,17.48,9.40],['VideoLLM-online',2.08,8.49,10.24,6.93],['Flash-VStream',5.68,3.91,4.73,4.77],['Interleaved',29.86,1.90,.83,10.87],['Response-only',31.26,8.61,4.11,14.66]],
-  },
-  pvqa: {
-    caption:'ProactiveVideoQA · Timing and content',
-    columns:['WEB PAUC ↑','EGO PAUC ↑','VAD PAUC ↑'],
-    note:'PAUC uses ω = 0.5. SyncPro-RL leads VAD, ranks second on WEB, and obtains 33.74 on EGO. Table 1 gives the complete comparison protocol.',
-    rows:[['SyncPro-RL',48.28,33.74,32.43],['SyncPro-SFT',47.83,33.89,32.14],['Em-Garde',44.30,52.30,27.40],['MMDuet2',53.30,33.60,28.90],['MMDuet',38.90,46.00,27.40],['ThinkStream',30.19,24.47,18.17],['VST',21.11,24.97,25.08],['VideoLLM-online',25.90,25.00,25.00],['VideoChat3',28.40,28.10,25.10],['Interleaved',29.89,25.00,25.91],['Response-only',27.98,27.98,31.17]],
-  },
-};
-function showBenchmark(key) {
-  const benchmark = benchmarks[key];
-  const maxima = benchmark.columns.map((_,index) => Math.max(...benchmark.rows.map(row => row[index+1] ?? -Infinity)));
-  $('resultsTable').innerHTML = `<caption>${benchmark.caption}</caption><thead><tr><th scope="col">Method</th>${benchmark.columns.map(label => `<th scope="col">${label}</th>`).join('')}</tr></thead><tbody>${benchmark.rows.map(row => `<tr class="${row[0].startsWith('SyncPro') ? 'ours' : ['Interleaved','Response-only'].includes(row[0]) ? 'comparison' : ''}"><td>${row[0]}</td>${row.slice(1).map((value,index) => `<td class="${value === maxima[index] ? 'best' : ''}">${value === null ? '–' : value.toFixed(2)}</td>`).join('')}</tr>`).join('')}</tbody>`;
-  $('resultNote').textContent = benchmark.note;
-  $('resultPanel').setAttribute('aria-labelledby', `tab-${key}`);
-  document.querySelectorAll('[data-benchmark]').forEach(button => {
-    const active = button.dataset.benchmark === key;
-    button.setAttribute('aria-selected', String(active));
-    button.tabIndex = active ? 0 : -1;
-  });
-}
-const tabs = [...document.querySelectorAll('[data-benchmark]')];
-tabs.forEach((button,index) => {
-  button.addEventListener('click', () => showBenchmark(button.dataset.benchmark));
-  button.addEventListener('keydown', event => {
-    let next;
-    if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-    else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
-    else if (event.key === 'Home') next = 0;
-    else if (event.key === 'End') next = tabs.length - 1;
-    else return;
-    event.preventDefault();
-    tabs[next].focus();
-    showBenchmark(tabs[next].dataset.benchmark);
-  });
-});
-showBenchmark('streaming');
-
 $('copyCitation').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText($('bibtex').textContent);

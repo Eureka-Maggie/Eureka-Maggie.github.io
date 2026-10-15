@@ -15,9 +15,9 @@
   <link rel="canonical" href="https://eureka-maggie.github.io/SyncPro/">
   <link rel="icon" type="image/png" href="assets/syncpro-mascot.png">
   <link rel="apple-touch-icon" href="assets/syncpro-mascot.png">
-  <link rel="stylesheet" href="project.css?v=5">
+  <link rel="stylesheet" href="project.css?v=6">
   <script src="review-data.js?v=5" defer></script>
-  <script src="project.js?v=5" defer></script>
+  <script src="project.js?v=6" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to content</a>
@@ -92,12 +92,57 @@
   </div></section>
 
   <section id="results" class="container section">
-    <p class="eyebrow">Experiments</p><h2>Proactive timing across three benchmarks.</h2>
-    <p class="lead">SyncPro-RL achieves 41.20 Acc@2s on StreamingBench-PO, 34.19 average F1 on OVO-Bench Forward Active Responding, and 32.43 PAUC on the VAD subset of ProactiveVideoQA.</p>
-    <div class="result-tabs" role="tablist" aria-label="Benchmark results"><button id="tab-streaming" type="button" role="tab" aria-controls="resultPanel" aria-selected="true" data-benchmark="streaming">StreamingBench</button><button id="tab-ovo" type="button" role="tab" aria-controls="resultPanel" aria-selected="false" tabindex="-1" data-benchmark="ovo">OVO-Bench</button><button id="tab-pvqa" type="button" role="tab" aria-controls="resultPanel" aria-selected="false" tabindex="-1" data-benchmark="pvqa">ProactiveVideoQA</button></div>
-    <div id="resultPanel" role="tabpanel" aria-labelledby="tab-streaming" tabindex="0"><div class="table-scroll"><table id="resultsTable"></table></div><p class="table-note" id="resultNote"></p></div>
-    <noscript><p>The comparison tables require JavaScript. <a href="paper/SyncPro.pdf#page=7">Read Tables 1 and 2 in the paper.</a></p></noscript>
-    <p class="results-source">Results from Tables 1 and 2 of the paper. Values are percentages; higher is better. <a href="paper/SyncPro.pdf#page=7" target="_blank" rel="noopener">Full evaluation and protocols ↗</a></p>
+    <h2>Experiments</h2>
+    <div class="table-scroll" role="region" aria-label="StreamingBench and ProactiveVideoQA results" tabindex="0">
+      <table class="result-table">
+        <caption>Table 1. Results on StreamingBench and ProactiveVideoQA.</caption>
+        <thead>
+          <tr><th rowspan="2" scope="col">Method</th><th scope="col">StreamingBench</th><th colspan="3" scope="colgroup">ProactiveVideoQA</th></tr>
+          <tr><th scope="col">PO</th><th scope="col">WEB</th><th scope="col">EGO</th><th scope="col">VAD</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Streaming models</th></tr>
+          <tr><th scope="row">VideoLLM-online</th><td>4.00</td><td>25.90</td><td>25.00</td><td>25.00</td></tr>
+          <tr><th scope="row">MMDuet</th><td>29.44</td><td>38.90</td><td>46.00</td><td>27.40</td></tr>
+          <tr><th scope="row">MMDuet2</th><td>34.60</td><td>53.30</td><td>33.60</td><td>28.90</td></tr>
+          <tr><th scope="row">Em-Garde</th><td>38.00</td><td>44.30</td><td>52.30</td><td>27.40</td></tr>
+          <tr><th scope="row">VideoChat3</th><td>–</td><td>28.40</td><td>28.10</td><td>25.10</td></tr>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Reasoning-enabled models</th></tr>
+          <tr><th scope="row">VST</th><td>19.60</td><td>21.11</td><td>24.97</td><td>25.08</td></tr>
+          <tr><th scope="row">ThinkStream</th><td>27.20</td><td>30.19</td><td>24.47</td><td>18.17</td></tr>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Ours</th></tr>
+          <tr class="ours"><th scope="row">SyncPro-RL</th><td>41.20</td><td>48.28</td><td>33.74</td><td>32.43</td></tr>
+          <tr class="ours"><th scope="row">SyncPro-SFT</th><td>38.80</td><td>47.83</td><td>33.89</td><td>32.14</td></tr>
+          <tr><th scope="row">Interleaved</th><td>34.00</td><td>29.89</td><td>25.00</td><td>25.91</td></tr>
+          <tr><th scope="row">Response-only</th><td>22.80</td><td>27.98</td><td>27.98</td><td>31.17</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">StreamingBench-PO uses Acc@2s with a two-second tolerance. ProactiveVideoQA uses PAUC (ω = 0.5). Values are percentages; higher is better.</p>
+    <div class="table-scroll" role="region" aria-label="OVO-Bench Forward Active Responding results" tabindex="0">
+      <table class="result-table">
+        <caption>Table 2. OVO-Bench Forward Active Responding.</caption>
+        <thead><tr><th scope="col">Method</th><th scope="col">CRR (P/R/F1)</th><th scope="col">SSR (P/R/F1)</th><th scope="col">REC (P/R/F1)</th><th scope="col">Avg. F1</th></tr></thead>
+        <tbody>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Streaming models</th></tr>
+          <tr><th scope="row">VideoLLM-online</th><td>2.08/2.08/2.08</td><td>6.88/11.07/8.49</td><td>16.46/7.43/10.24</td><td>6.93</td></tr>
+          <tr><th scope="row">Flash-VStream</th><td>5.21/6.25/5.68</td><td>9.52/2.46/3.91</td><td>7.49/3.46/4.73</td><td>4.77</td></tr>
+          <tr><th scope="row">StreamForest</th><td>2.08/2.08/2.08</td><td>13.69/8.02/10.11</td><td>28.90/30.49/29.67</td><td>13.95</td></tr>
+          <tr><th scope="row">MMDuet2</th><td>8.47/47.92/14.40</td><td>–</td><td>42.72/19.33/26.62</td><td>20.51</td></tr>
+          <tr><th scope="row">Em-Garde</th><td>18.22/47.92/26.40</td><td>14.87/54.88/23.40</td><td>39.66/47.33/43.16</td><td>30.99</td></tr>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Reasoning-enabled models</th></tr>
+          <tr><th scope="row">VST</th><td>4.65/18.75/7.46</td><td>3.80/2.86/3.26</td><td>9.63/95.00/17.48</td><td>9.40</td></tr>
+          <tr><th scope="row">ThinkStream</th><td>3.09/18.75/5.30</td><td>3.65/49.60/6.80</td><td>31.48/23.01/26.58</td><td>12.89</td></tr>
+          <tr class="row-group"><th colspan="5" scope="rowgroup">Ours</th></tr>
+          <tr class="ours"><th scope="row">SyncPro-RL</th><td>16.99/64.58/26.91</td><td>17.50/48.17/25.67</td><td>35.43/84.95/50.00</td><td>34.19</td></tr>
+          <tr class="ours"><th scope="row">SyncPro-SFT</th><td>18.09/62.50/28.06</td><td>13.14/57.06/21.36</td><td>33.12/85.14/47.69</td><td>32.37</td></tr>
+          <tr><th scope="row">Interleaved</th><td>23.18/41.97/29.86</td><td>2.38/1.59/1.90</td><td>0.52/2.08/0.83</td><td>10.87</td></tr>
+          <tr><th scope="row">Response-only</th><td>20.93/61.75/31.26</td><td>4.74/47.22/8.61</td><td>2.31/18.75/4.11</td><td>14.66</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Precision, recall, and F1 use a two-second tolerance. Average F1 is the task mean; MMDuet2’s reported mean covers its two available tasks. Values are percentages.</p>
+    <p class="results-source"><a href="paper/SyncPro.pdf#page=7" target="_blank" rel="noopener">Full evaluation and protocols in the paper ↗</a></p>
   </section>
 
   <section id="citation" class="section citation-section"><div class="container">
