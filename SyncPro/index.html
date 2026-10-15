@@ -1,70 +1,119 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SyncPro · Video Showcase</title>
-  <style>
-    :root{--ink:#243244;--muted:#657587;--line:#dce3ed;--purple:#8651bf;--pink:#d85d91;--blue:#365a85}
-    *{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:var(--ink);font:15px/1.6 "Comic Sans MS","Comic Sans",-apple-system,sans-serif}button,a,input{font:inherit}button{cursor:pointer}a{color:var(--blue)}
-    main{max-width:1280px;margin:auto;padding:32px 32px 60px}header{display:flex;align-items:center;gap:14px;padding-bottom:24px}header img{width:54px;height:54px;object-fit:contain}h1{font-size:28px;margin:0;letter-spacing:-.04em}header p{margin:2px 0;color:var(--muted);font-size:13px}.edition{margin-left:auto;background:#fff;padding:5px 12px;border:1px solid var(--line);border-radius:20px;font-size:12px;white-space:nowrap}
-    header .affiliation{margin-top:12px;font-size:14px;line-height:1.7;color:var(--ink)}header .affiliation a{color:inherit;text-decoration:none}header .affiliation a:hover{text-decoration:underline}header .affiliation strong{font-weight:700}
-    .player-shell{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white;box-shadow:0 8px 30px #28395109}video{display:block;width:100%;aspect-ratio:16/9;background:#182330}.player-meta{padding:18px 22px;display:flex;align-items:center;gap:15px;flex-wrap:wrap}.player-meta>div{min-width:0}.player-meta h2{font-size:18px;margin:0}.player-meta p{margin:3px 0 0;font-size:12px;color:var(--muted);overflow-wrap:anywhere}.download{margin-left:auto;text-decoration:none;font-size:13px;background:#f0f4fa;padding:8px 13px;border-radius:7px}
-    .versions{display:flex;gap:8px;margin:18px 0;flex-wrap:wrap}.versions button,.chapters button,.filter button{border:1px solid var(--line);border-radius:7px;background:white;padding:8px 13px;color:var(--ink)}.versions button.active,.filter button.active{background:#243244;color:white;border-color:#243244}.legend{margin-left:auto;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:12px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}.purple{background:var(--purple)}.pink{background:var(--pink)}
-    .chapters{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:10px 0 24px;color:var(--muted);font-size:12px}.chapters button{font-size:12px;padding:5px 9px}.section-head{display:flex;gap:20px;align-items:center;margin:32px 0 15px}.section-head h2{font-size:20px;margin:0}.section-head p{margin:0;font-size:13px;color:var(--muted)}.filter{margin-left:auto;display:flex;gap:6px}.filter button{font-size:12px;padding:6px 11px}
-    .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{display:block;min-width:0;text-align:left;padding:0;border:1px solid var(--line);background:white;border-radius:11px;overflow:hidden;color:inherit}.card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.card:hover,.card.active{border-color:var(--purple);box-shadow:0 0 0 1px var(--purple)}.card-body{padding:12px 14px}.card .tag{font-size:11px;color:var(--purple)}.card h3{font-size:14px;margin:5px 0 8px}.card small{font-size:11px;color:var(--muted)}
-    details{border-top:1px solid var(--line);padding:16px 22px;color:var(--muted);font-size:13px}summary{cursor:pointer}.detail-content{margin-top:12px;line-height:1.8}.trace{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #edf0f5}.trace time{font-size:12px;white-space:nowrap}.trace p{margin:0}.trace .think{color:var(--purple)}.trace .speak{color:#9e3866}footer{margin-top:34px;border-top:1px solid var(--line);padding-top:18px;font-size:12px;color:var(--muted)}footer p{margin:5px 0}.empty{padding:30px;color:var(--muted)}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #9aa9eb;outline-offset:4px}
-    @media(max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.legend{margin-left:0}.section-head{flex-wrap:wrap}.filter{margin-left:0}}@media(max-width:600px){main{padding:18px 12px 35px}header{gap:9px}header img{width:40px;height:40px}h1{font-size:22px}.edition{display:none}.player-meta{padding:12px}.download{margin-left:0}.cards{gap:10px}.card-body{padding:10px}.card h3{font-size:13px}details{padding:12px}}
-  </style>
+  <meta name="theme-color" content="#7951b0">
+  <title>SyncPro | Synchronous Reasoning and Responding</title>
+  <meta name="description" content="SyncPro coordinates internal reasoning and proactive responses for streaming video understanding. Explore the paper, video demonstrations, method, SyncPro-189K dataset, and results.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SyncPro: Synchronous Reasoning and Responding">
+  <meta property="og:description" content="Two synchronized streams for proactive streaming video understanding.">
+  <meta property="og:url" content="https://eureka-maggie.github.io/SyncPro/">
+  <meta property="og:image" content="https://eureka-maggie.github.io/SyncPro/assets/overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://eureka-maggie.github.io/SyncPro/">
+  <link rel="icon" type="image/png" href="assets/syncpro-mascot.png">
+  <link rel="apple-touch-icon" href="assets/syncpro-mascot.png">
+  <link rel="stylesheet" href="project.css?v=5">
+  <script src="review-data.js?v=5" defer></script>
+  <script src="project.js?v=5" defer></script>
 </head>
 <body>
-<main>
-<header><img src="assets/syncpro-mascot.png" alt="SyncPro"><div><h1>SyncPro</h1><p>Synchronous Reasoning and Responding for Proactive Streaming Video Understanding</p><p class="affiliation"><strong><a href="https://klais.ict.ac.cn/" target="_blank" rel="noopener">State Key Laboratory of AI Safety</a></strong><br><a href="https://english.ict.cas.cn/" target="_blank" rel="noopener">Institute of Computing Technology, Chinese Academy of Sciences</a></p></div></header>
-  <div class="versions"><button id="musicButton" class="active">配乐合集</button><button id="silentButton">静音合集</button><div class="legend"><span><i class="dot purple"></i>Inner</span><span><i class="dot pink"></i>Response</span></div></div>
-  <section class="player-shell">
-    <video id="player" controls playsinline preload="metadata" poster="posters/case_0923.jpg" src="SyncPro_showcase_music.mp4" aria-label="SyncPro 展示视频"></video>
-    <div class="player-meta"><div><h2 id="playingTitle">合集 · 配乐版</h2><p id="playingNote">轻音乐铺底，输出出现时自动降低音量；原视频声音关闭。</p></div><a class="download" id="downloadLink" href="SyncPro_showcase_music.mp4" download>下载当前视频 ↓</a></div>
-    <details id="details"><summary>查看输出记录</summary><div class="detail-content" id="detailContent"></div></details>
+<a class="skip-link" href="#overview">Skip to content</a>
+<nav class="navigation" aria-label="Main navigation"><div class="nav-inner">
+  <a class="brand" href="#top"><img src="assets/syncpro-mascot.png" alt="" width="36" height="36">SyncPro</a>
+  <div class="nav-links"><a href="#demo">Demo</a><a href="#method">Method</a><a href="#dataset">Dataset</a><a href="#results">Results</a></div>
+  <a class="nav-paper" href="paper/SyncPro.pdf" target="_blank" rel="noopener">Read the paper ↗</a>
+</div></nav>
+<main id="top">
+  <header class="hero container">
+    <div class="wordmark"><img src="assets/syncpro-mascot.png" width="90" height="90" alt="SyncPro mascot"><span>SyncPro</span></div>
+    <h1>Synchronous <span class="inner-text">Reasoning</span> and <span class="response-text">Responding</span><br class="desktop-break"> for Proactive Streaming Video Understanding</h1>
+    <div class="authors" aria-label="Authors">
+      <a href="https://eureka-maggie.github.io/" target="_blank" rel="noopener">Tian Xueyun<sup>1,2,3</sup></a>
+      <span>Bingbing Xu<sup>1</sup></span><span>Jiaming Liu<sup>3,†</sup></span>
+      <span>Jinpeng Yu<sup>3</sup></span><span>Yang Shi<sup>3</sup></span><br class="author-break"><span>Yu Zhao<sup>1</sup></span>
+      <span>Ruihua Huang<sup>3</sup></span><span>Yuanzhuo Wang<sup>1</sup></span><span>Huawei Shen<sup>1,2</sup></span>
+    </div>
+    <div class="affiliations">
+      <p><sup>1</sup> <a href="https://klais.ict.ac.cn/" target="_blank" rel="noopener">State Key Laboratory of AI Safety</a>, Institute of Computing Technology, CAS</p>
+      <p><span><sup>2</sup> University of Chinese Academy of Sciences</span><span><sup>3</sup> Qwen Business Unit of Alibaba</span></p>
+    </div>
+    <p class="author-note"><sup>†</sup> Project Leader · <a href="mailto:tianxueyun23z@ict.ac.cn">Contact</a></p>
+    <div class="resource-links" aria-label="Project resources">
+      <a class="resource primary" href="paper/SyncPro.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5"/></svg><span>Paper</span><span aria-hidden="true">↗</span></a>
+      <a class="resource" href="https://github.com/Eureka-Maggie/SyncPro" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.09c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.54 0-1.22.44-2.22 1.16-3-.12-.29-.5-1.42.11-2.96 0 0 .95-.3 3.08 1.15a10.8 10.8 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.67.11 2.96.73.78 1.16 1.78 1.16 3 0 4.3-2.63 5.25-5.14 5.53.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8z"/></svg><span>Code <small>Coming soon</small></span><span aria-hidden="true">↗</span></a>
+      <a class="resource" href="https://huggingface.co/datasets/EurekaTian/SyncPro-189k" target="_blank" rel="noopener"><span class="hf-icon" aria-hidden="true">🤗</span><span>Dataset <small>Coming soon</small></span><span aria-hidden="true">↗</span></a>
+      <a class="resource citation-link" href="#citation"><span class="quote-icon" aria-hidden="true">“</span><span>Cite</span></a>
+    </div>
+  </header>
+
+  <section id="overview" class="container section overview">
+    <p class="eyebrow">Reasoning and responding, in sync</p>
+    <h2>Track the evidence. Respond at the right moment.</h2>
+    <p class="lead">SyncPro gives a streaming video assistant two specialized branches: <strong class="inner-text">Inner</strong> tracks query-relevant evidence, while <strong class="response-text">Response</strong> delivers the requested output. They share the same causal history and activate independently, so a response can proceed alongside ongoing reasoning.</p>
+    <figure class="paper-figure overview-figure"><a href="assets/overview.png" target="_blank" rel="noopener" aria-label="Open the overview figure at full resolution"><img src="assets/overview.png" width="2400" height="705" alt="SyncPro supports adaptive reasoning, specialized roles, and independent activation of reasoning and responses."></a><figcaption>Internal updates follow relevant evidence; user-facing responses follow the requested condition.</figcaption></figure>
+    <details class="abstract"><summary>Read the full abstract <span aria-hidden="true">+</span></summary><p>Proactive streaming video understanding requires assistants to track unfolding events and respond when a user’s requested condition is met. To make these decisions, assistants must accumulate relevant evidence and reassess response conditions as new observations arrive. Existing work offers complementary capabilities for this process: proactive video assistants learn when to respond, while streaming video reasoning methods generate scheduled intermediate text to organize observations and support subsequent answers. Together, these capabilities provide a foundation for proactive reasoning, but how to coordinate ongoing reasoning with timely responses remains underexplored. In a direct adaptation, fixed reasoning intervals can trigger updates when nothing relevant has changed or postpone useful updates until the next scheduled step. Sharing one generation path also couples two distinct requirements: preserving evidence for future decisions and producing only the response requested by the user. Moreover, responses generated after reasoning must wait for it to finish, even when sufficient evidence is already available. To address these challenges, we introduce SyncPro, a synchronous dual-stream framework with specialized generation paths for evidence tracking and user-facing responses. Its Inner and Response branches share causal history and activate independently, allowing relevant evidence changes to trigger internal updates and responses to proceed concurrently with ongoing reasoning. We construct 189K dual-stream examples and train SyncPro through supervised fine-tuning followed by trajectory-level reinforcement learning. Experiments across three proactive benchmarks show improved response timing and more accurate answers to user requests.</p></details>
   </section>
-  <div class="chapters" id="chapters"><span>合集跳转：</span></div>
-  <div class="section-head"><div><h2>独立 case</h2><p>点击卡片播放；独立视频均为静音版。</p></div><div class="filter"><button class="active" data-role="main">主展示</button><button data-role="reserve">备选</button><button data-role="all">全部</button></div></div>
-  <div class="cards" id="cards"></div>
-  <footer><a href="MUSIC_CREDITS.txt">Credits</a></footer>
+
+  <section id="demo" class="section demo-section"><div class="container">
+    <div class="section-heading"><div><p class="eyebrow">See SyncPro in action</p><h2>Follow both streams as events unfold.</h2></div><a class="text-link" href="#examples">Explore the examples ↓</a></div>
+    <div class="demo-toolbar"><div class="segmented" aria-label="Video edition"><button id="musicButton" type="button" class="active" aria-pressed="true">With music</button><button id="silentButton" type="button" aria-pressed="false">Silent</button></div><div class="legend"><span><img src="assets/think.png" alt="">Inner</span><span><img src="assets/speak.png" alt="">Response</span></div></div>
+    <div class="player-shell">
+      <video id="player" controls playsinline preload="metadata" poster="posters/case_0923.jpg?v=5" src="SyncPro_showcase_music.mp4?v=5" aria-label="SyncPro video demonstrations"></video>
+      <div class="player-meta"><div><h3 id="playingTitle">SyncPro in action</h3><p id="playingNote">Synchronized source video, Inner, and Response.</p></div><a class="download" id="downloadLink" href="SyncPro_showcase_music.mp4?v=5" download>Download video ↓</a></div>
+      <p id="mediaError" role="status" hidden>Video could not load. <a href="SyncPro_showcase_music.mp4?v=5">Open the video directly</a>.</p>
+    </div>
+    <div class="chapters" id="chapters" aria-label="Video chapters"></div>
+    <p class="demo-note">The outline pulses when a branch produces an output. Inner is shown here to make the model’s reasoning visible; only Response is returned to the user. Playback speed is marked within each clip.</p>
+    <div id="examples" class="examples-heading"><h3>Explore the examples</h3><div id="caseFilters" class="case-filters" aria-label="Filter examples"></div></div>
+    <div class="case-grid" id="cards"></div>
+    <details id="outputDetails" class="output-details"><summary>Read the selected example’s outputs <span aria-hidden="true">+</span></summary><div id="detailContent"><p>Select an example above to see its request and original outputs.</p></div></details>
+  </div></section>
+
+  <section id="method" class="container section">
+    <p class="eyebrow">Method</p><h2>One shared history. Two independent branches.</h2>
+    <p class="lead">At each micro-turn, SyncPro encodes the current observation once. Separate LoRA routes let Inner and Response each choose to remain silent or generate content. Both branches decode from the same prefix, then contribute their completed outputs to the context for the next observation.</p>
+    <figure class="paper-figure"><a href="assets/architecture.png" target="_blank" rel="noopener" aria-label="Open the model architecture at full resolution"><img src="assets/architecture.png" width="2400" height="715" loading="lazy" alt="SyncPro architecture: shared Qwen3.5 backbone, separate Inner and Response LoRA routes, synchronous decoding, and shared history updates."></a><figcaption>Each branch sees the shared prefix and its own generated tokens. Outputs from the other branch become available at the next micro-turn.</figcaption></figure>
+    <div class="method-grid">
+      <article><span class="step-number">01</span><h3>Learn when to activate</h3><p>Supervised fine-tuning teaches branch actions and output content. Action Temporal Ranking strengthens the preference for the annotated response time over nearby silent steps.</p></article>
+      <article><span class="step-number">02</span><h3>Refine response timing</h3><p>Trajectory-level reinforcement learning optimizes hard-window F1 over complete causal rollouts, rewarding event coverage and penalizing unmatched responses.</p></article>
+    </div>
+    <aside class="context-note"><h3>Carrying evidence forward</h3><p>The visual context stays compact to limit persistent cache growth. Inner and Response entries carry useful information into later decisions after the corresponding visual tokens are discarded. As a condition approaches, an Inner update can record the evidence that also supports the next Response.</p></aside>
+  </section>
+
+  <section id="dataset" class="section data-section"><div class="container">
+    <p class="eyebrow">Dataset</p><div class="section-heading"><h2>SyncPro-189K</h2><a class="text-link" href="https://huggingface.co/datasets/EurekaTian/SyncPro-189k" target="_blank" rel="noopener"><span class="hf-icon" aria-hidden="true">🤗</span> Dataset on Hugging Face ↗ <small>Coming soon</small></a></div>
+    <p class="lead">Causal video trajectories pair a user query with supervision for both branches: when to update internal evidence, when to respond, and when to stay silent.</p>
+    <dl class="dataset-stats"><div><dt>Trajectories</dt><dd>189,403</dd></div><div><dt>Micro-turns</dt><dd>13.52M</dd></div><div><dt>Video sources</dt><dd>12</dd></div></dl>
+    <div class="dataset-figures"><figure class="paper-figure"><a href="assets/data-pipeline.png" target="_blank" rel="noopener" aria-label="Open the data construction figure"><img src="assets/data-pipeline.png" width="2400" height="1519" loading="lazy" alt="Two data construction routes: proactive query and trajectory synthesis, and adaptation of temporal annotations, followed by quality checks."></a><figcaption>Proactive synthesis and temporal-label adaptation produce dual-stream supervision.</figcaption></figure><figure class="paper-figure"><a href="assets/data-composition.png" target="_blank" rel="noopener" aria-label="Open the dataset composition figure"><img src="assets/data-composition.png" width="2400" height="3515" loading="lazy" alt="SyncPro-189K composition across information acquisition, event notification, and continuous assistance."></a><figcaption>Information acquisition, event notification, and continuous assistance.</figcaption></figure></div>
+    <p class="dataset-note">The planned release contains annotations and portable frame references. Original videos are obtained from their source datasets.</p>
+  </div></section>
+
+  <section id="results" class="container section">
+    <p class="eyebrow">Experiments</p><h2>Proactive timing across three benchmarks.</h2>
+    <p class="lead">SyncPro-RL achieves 41.20 Acc@2s on StreamingBench-PO, 34.19 average F1 on OVO-Bench Forward Active Responding, and 32.43 PAUC on the VAD subset of ProactiveVideoQA.</p>
+    <div class="result-tabs" role="tablist" aria-label="Benchmark results"><button id="tab-streaming" type="button" role="tab" aria-controls="resultPanel" aria-selected="true" data-benchmark="streaming">StreamingBench</button><button id="tab-ovo" type="button" role="tab" aria-controls="resultPanel" aria-selected="false" tabindex="-1" data-benchmark="ovo">OVO-Bench</button><button id="tab-pvqa" type="button" role="tab" aria-controls="resultPanel" aria-selected="false" tabindex="-1" data-benchmark="pvqa">ProactiveVideoQA</button></div>
+    <div id="resultPanel" role="tabpanel" aria-labelledby="tab-streaming" tabindex="0"><div class="table-scroll"><table id="resultsTable"></table></div><p class="table-note" id="resultNote"></p></div>
+    <noscript><p>The comparison tables require JavaScript. <a href="paper/SyncPro.pdf#page=7">Read Tables 1 and 2 in the paper.</a></p></noscript>
+    <p class="results-source">Results from Tables 1 and 2 of the paper. Values are percentages; higher is better. <a href="paper/SyncPro.pdf#page=7" target="_blank" rel="noopener">Full evaluation and protocols ↗</a></p>
+  </section>
+
+  <section id="citation" class="section citation-section"><div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Citation</p><h2>BibTeX</h2></div><button id="copyCitation" type="button">Copy BibTeX</button></div>
+    <pre><code id="bibtex">@misc{tian2026syncpro,
+  title  = {SyncPro: Synchronous Reasoning and Responding for
+            Proactive Streaming Video Understanding},
+  author = {Tian, Xueyun and Xu, Bingbing and Liu, Jiaming and
+            Yu, Jinpeng and Shi, Yang and Zhao, Yu and
+            Huang, Ruihua and Wang, Yuanzhuo and Shen, Huawei},
+  year   = {2026},
+  url    = {https://eureka-maggie.github.io/SyncPro/}
+}</code></pre><p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+    <a class="text-link" href="paper/SyncPro.bib" download>Download .bib ↓</a>
+  </div></section>
 </main>
-<script src="review-data.js"></script>
-<script>
-const $=id=>document.getElementById(id), player=$('player'), DATA=window.SYNCPRO_REVIEW;
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const duration=s=>{const t=Math.round(s);return `${Math.floor(t/60)}:${String(t%60).padStart(2,'0')}`;};
-$('musicButton').textContent=`配乐合集 · ${duration(DATA.music_duration_s)}`;
-$('silentButton').textContent=`静音合集 · ${duration(DATA.duration_s)}`;
-let current='music',role='main',request=0;
-function renderCards(){
- $('cards').innerHTML=DATA.cases.filter(c=>role==='all'||c.role===role).map(c=>`<button class="card ${current===c.number?'active':''}" data-case="${c.number}"><img loading="lazy" src="posters/case_${String(c.number).padStart(4,'0')}.jpg" alt="${esc(c.title)}"><div class="card-body"><span class="tag">${esc(c.category)}</span><h3>${esc(c.title)}</h3><small>#${String(c.number).padStart(4,'0')} · ${duration(c.duration)} · ${esc(c.benchmark)}</small></div></button>`).join('');
- $('cards').querySelectorAll('[data-case]').forEach(b=>b.onclick=()=>select(Number(b.dataset.case)));
-}
-async function select(value,seek=null){
- const token=++request;current=value;player.pause();
- let url,title,note,detail,poster;
- if(typeof value==='number'){
-  const c=DATA.cases.find(c=>c.number===value);url=`videos/case_${String(c.number).padStart(4,'0')}.mp4`;title=c.title;poster=`posters/case_${String(c.number).padStart(4,'0')}.jpg`;
-  note=`静音 · ${c.benchmark} / ${c.id} · 源片段 ${c.start}–${c.end}s`;
-  detail=`<p>${esc(c.query)}</p>`+c.events.map(e=>`<div class="trace"><time>SOURCE ${e.time_s}s</time><div>${e.thinking?`<p class="think"><b>Inner</b> ${esc(e.thinking)}</p>`:''}${e.response?`<p class="speak"><b>Response</b> ${esc(e.response)}</p>`:''}</div></div>`).join('');
- }else{
-  const music=value==='music';url=music?'SyncPro_showcase_music.mp4':'SyncPro_showcase.mp4';title=music?'合集 · 配乐版':'合集 · 静音版';poster='posters/case_0923.jpg';note=music?'轻音乐铺底，输出出现时自动降低音量；原视频声音关闭。':'静音版。';
-  detail='<p>点击下方视频可查看对应的 Inner 与 Response 输出记录。</p>';
- }
- player.poster=poster;player.src=url;player.load();$('playingTitle').textContent=title;$('playingNote').textContent=note;$('detailContent').innerHTML=detail;$('downloadLink').href=url;$('details').open=false;
- $('musicButton').classList.toggle('active',value==='music');$('silentButton').classList.toggle('active',value==='silent');renderCards();
- if(seek!==null){
-  await new Promise(resolve=>{if(player.readyState>=1)resolve();else player.addEventListener('loadedmetadata',resolve,{once:true});});
-  if(token!==request)return;player.currentTime=seek;player.play().catch(()=>{});
- }
-}
-$('musicButton').onclick=()=>select('music');$('silentButton').onclick=()=>select('silent');
-document.querySelectorAll('[data-role]').forEach(b=>b.onclick=()=>{role=b.dataset.role;document.querySelectorAll('[data-role]').forEach(x=>x.classList.toggle('active',x===b));renderCards();});
-for(const c of DATA.chapters){const b=document.createElement('button');b.textContent=`${duration(c.start_s)} · #${String(c.case_number).padStart(4,'0')}`;b.onclick=()=>select(current==='silent'?'silent':'music',c.start_s);$('chapters').appendChild(b);}
-select('music');
-</script>
+<footer class="container site-footer"><a class="brand" href="#top"><img src="assets/syncpro-mascot.png" alt="" width="32" height="32">SyncPro</a><p>State Key Laboratory of AI Safety · ICT, CAS · UCAS · Qwen Business Unit of Alibaba</p><a href="MUSIC_CREDITS.txt">Video credits</a></footer>
 </body>
 </html>
