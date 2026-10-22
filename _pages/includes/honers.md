@@ -1,6 +1,7 @@
 ## Honors & Awards
 {: #honors }
 
+- **National Scholarship for Graduate Students (研究生国家奖学金)** · 2026
 - **领航博士生奖**, ICT, CAS · 2025–2026 (1/45)
 - **Outstanding Merit Student (三好学生标兵)**, University of Chinese Academy of Sciences
 - **Outstanding Winner**, Mathematical Contest in Modeling (MCM/ICM) · 2021

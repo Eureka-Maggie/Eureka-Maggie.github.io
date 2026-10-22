@@ -49,10 +49,13 @@
   group: selected
   short_title: RARE
   title: 'RARE: Reinforcement Learning with Adaptive Rubric Evolution for Open-Ended Generation'
-  authors: Xueyun Tian · First-author work
-  venue: Under review at ICLR 2027
+  authors: Xueyun Tian, Bingbing Xu, Chuyue Li, Jiaming Liu, Chao Zhang, Weijia Feng, MingHua Ma, Yu Zhao,
+    Jingchu Wang, Ruihua Huang, Yuanzhuo Wang, Huawei Shen
+  venue: arXiv 2026 · Under review at ICLR 2027
   summary: Adaptive rubric evolution for open-ended generation, using current policy feedback to replace saturated
     criteria while retaining other criteria and scores.
+  paper: https://arxiv.org/abs/2610.25434
+  project: https://eureka-maggie.github.io/RARE/
   image: /images/papers/rare.png
   image_alt: 'RARE training pipeline illustrated on script generation: data construction, on-policy rollouts, rubric-based scoring, and criterion
     switching.'
